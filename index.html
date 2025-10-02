@@ -1,117 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sabores da Casa — Receitas e Culinária</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1>Sabores da Casa</h1>
-      <p class="tagline">Receitas simples, criativas e cheias de sabor 🍳🍰🌿</p>
-      <div class="controls">
-        <input id="search" placeholder="Buscar receitas..." aria-label="Buscar receitas">
-        <select id="filter">
-          <option value="all">Todas</option>
-          <option value="breakfast">Café da manhã</option>
-          <option value="lunch">Almoço/Jantar</option>
-          <option value="dessert">Sobremesa</option>
-          <option value="snack">Lanche</option>
-        </select>
-        <button id="randomBtn">Surpresa 🎲</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sabores da Casa — Receitas e Culinária</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1>Sabores da Casa</h1>
+        <p class="tagline">
+          Receitas simples, criativas e cheias de sabor 🍳🍰🌿
+        </p>
+        <div class="controls">
+          <input
+            id="search"
+            placeholder="Buscar receitas..."
+            aria-label="Buscar receitas"
+          />
+          <select id="filter">
+            <option value="all">Todas</option>
+            <option value="breakfast">Café da manhã</option>
+            <option value="lunch">Almoço/Jantar</option>
+            <option value="dessert">Sobremesa</option>
+            <option value="snack">Lanche</option>
+          </select>
+          <button id="randomBtn">Surpresa 🎲</button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>Bem-vindo(a)</h2>
-      <p>Explore receitas fáceis e deliciosas. Use a busca ou filtros para encontrar algo que combine com seu paladar.</p>
-    </section>
+    <main class="container">
+      <section class="intro">
+        <h2>Bem-vindo(a)</h2>
+        <p>
+          Explore receitas fáceis e deliciosas. Use a busca ou filtros para
+          encontrar algo que combine com seu paladar.
+        </p>
+      </section>
 
-    <section id="recipes" class="grid">
-      <!-- Recipe cards -->
-      <article class="card" data-name="Panqueca de Banana" data-category="breakfast">
-        <div class="card-media">🥞</div>
-        <h3>Panqueca de Banana</h3>
-        <p class="meta">Café da manhã • 15 min • Fácil</p>
-        <div class="card-body">
-          <p>Ingredientes: banana, ovo, farinha (opcional), canela.</p>
-          <ol>
-            <li>Amasse a banana e misture com ovo e canela.</li>
-            <li>Frite em fogo médio até dourar dos dois lados.</li>
-          </ol>
-        </div>
-      </article>
+      <section id="recipes" class="grid">
+        <!-- Recipe cards -->
+        <article
+          class="card"
+          data-name="Panqueca de Banana"
+          data-category="breakfast"
+        >
+          <div class="card-media">🥞</div>
+          <h3>Panqueca de Banana</h3>
+          <p class="meta">Café da manhã • 15 min • Fácil</p>
+          <div class="card-body">
+            <p>Ingredientes: banana, ovo, farinha (opcional), canela.</p>
+            <ol>
+              <li>Amasse a banana e misture com ovo e canela.</li>
+              <li>Frite em fogo médio até dourar dos dois lados.</li>
+            </ol>
+          </div>
+        </article>
 
-      <article class="card" data-name="Salada Mediterrânea" data-category="lunch">
-        <div class="card-media">🥗</div>
-        <h3>Salada Mediterrânea</h3>
-        <p class="meta">Almoço • 10 min • Leve</p>
-        <div class="card-body">
-          <p>Ingredientes: tomate, pepino, azeitona, queijo feta, azeite, limão.</p>
-          <ol>
-            <li>Pique os ingredientes e misture com azeite e limão.</li>
-            <li>Tempere com sal, pimenta e ervas a gosto.</li>
-          </ol>
-        </div>
-      </article>
+        <article
+          class="card"
+          data-name="Salada Mediterrânea"
+          data-category="lunch"
+        >
+          <div class="card-media">🥗</div>
+          <h3>Salada Mediterrânea</h3>
+          <p class="meta">Almoço • 10 min • Leve</p>
+          <div class="card-body">
+            <p>
+              Ingredientes: tomate, pepino, azeitona, queijo feta, azeite,
+              limão.
+            </p>
+            <ol>
+              <li>Pique os ingredientes e misture com azeite e limão.</li>
+              <li>Tempere com sal, pimenta e ervas a gosto.</li>
+            </ol>
+          </div>
+        </article>
 
-      <article class="card" data-name="Spaghetti Aglio e Olio" data-category="lunch">
-        <div class="card-media">🍝</div>
-        <h3>Spaghetti Aglio e Olio</h3>
-        <p class="meta">Almoço/Jantar • 20 min • Tradicional</p>
-        <div class="card-body">
-          <p>Ingredientes: spaghetti, alho, azeite, pimenta calabresa, salsinha.</p>
-          <ol>
-            <li>Cozinhe o macarrão al dente.</li>
-            <li>Refogue alho em azeite, misture ao macarrão e finalize com salsinha.</li>
-          </ol>
-        </div>
-      </article>
+        <article
+          class="card"
+          data-name="Spaghetti Aglio e Olio"
+          data-category="lunch"
+        >
+          <div class="card-media">🍝</div>
+          <h3>Spaghetti Aglio e Olio</h3>
+          <p class="meta">Almoço/Jantar • 20 min • Tradicional</p>
+          <div class="card-body">
+            <p>
+              Ingredientes: spaghetti, alho, azeite, pimenta calabresa,
+              salsinha.
+            </p>
+            <ol>
+              <li>Cozinhe o macarrão al dente.</li>
+              <li>
+                Refogue alho em azeite, misture ao macarrão e finalize com
+                salsinha.
+              </li>
+            </ol>
+          </div>
+        </article>
 
-      <article class="card" data-name="Bolo de Chocolate Simples" data-category="dessert">
-        <div class="card-media">🍰</div>
-        <h3>Bolo de Chocolate Simples</h3>
-        <p class="meta">Sobremesa • 40 min • Caseiro</p>
-        <div class="card-body">
-          <p>Ingredientes: ovos, açúcar, cacau, farinha, fermento.</p>
-          <ol>
-            <li>Misture ovos e açúcar, acrescente cacau e farinha.</li>
-            <li>Asse em forno médio por ~30 minutos.</li>
-          </ol>
-        </div>
-      </article>
+        <article
+          class="card"
+          data-name="Bolo de Chocolate Simples"
+          data-category="dessert"
+        >
+          <div class="card-media">🍰</div>
+          <h3>Bolo de Chocolate Simples</h3>
+          <p class="meta">Sobremesa • 40 min • Caseiro</p>
+          <div class="card-body">
+            <p>Ingredientes: ovos, açúcar, cacau, farinha, fermento.</p>
+            <ol>
+              <li>Misture ovos e açúcar, acrescente cacau e farinha.</li>
+              <li>Asse em forno médio por ~30 minutos.</li>
+            </ol>
+          </div>
+        </article>
 
-      <article class="card" data-name="Torradas de Abacate" data-category="snack">
-        <div class="card-media">🥑</div>
-        <h3>Torradas de Abacate</h3>
-        <p class="meta">Lanche • 5 min • Rápido</p>
-        <div class="card-body">
-          <p>Ingredientes: pão, abacate, limão, sal, pimenta.</p>
-          <ol>
-            <li>Amasse o abacate e tempere.</li>
-            <li>Espalhe sobre torradas e sirva.</li>
-          </ol>
-        </div>
-      </article>
+        <article
+          class="card"
+          data-name="Torradas de Abacate"
+          data-category="snack"
+        >
+          <div class="card-media">🥑</div>
+          <h3>Torradas de Abacate</h3>
+          <p class="meta">Lanche • 5 min • Rápido</p>
+          <div class="card-body">
+            <p>Ingredientes: pão, abacate, limão, sal, pimenta.</p>
+            <ol>
+              <li>Amasse o abacate e tempere.</li>
+              <li>Espalhe sobre torradas e sirva.</li>
+            </ol>
+          </div>
+        </article>
+      </section>
 
-    </section>
+      <section class="tips">
+        <h2>Dica rápida</h2>
+        <p>
+          Substituições rápidas: leite vegetal em sobremesas, iogurte para
+          molhos cremosos, ervas frescas para realçar sabores.
+        </p>
+      </section>
+    </main>
 
-    <section class="tips">
-      <h2>Dica rápida</h2>
-      <p>Substituições rápidas: leite vegetal em sobremesas, iogurte para molhos cremosos, ervas frescas para realçar sabores.</p>
-    </section>
-  </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>Feito com carinho — Sabores da Casa • Exemplo educativo</p>
+      </div>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Feito com carinho — Sabores da Casa • Exemplo educativo</p>
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
