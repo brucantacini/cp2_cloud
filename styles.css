@@ -1,0 +1,33 @@
+/* styles.css - Estilo simples e responsivo para o site de receitas */
+:root{
+  --bg:#fff8f2;
+  --card:#ffffff;
+  --accent:#d35400;
+  --muted:#6b6b6b;
+  --glass: rgba(255,255,255,0.7);
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#fff8f2 0%, #fff 60%);color:#222}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg, #ffecd2, #ffd0b3);border-bottom:1px solid rgba(0,0,0,0.04)}
+.header-inner{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.site-header h1{margin:12px 0 0;font-size:28px;color:var(--accent)}
+.tagline{margin:0;color:var(--muted)}
+.controls{display:flex;gap:8px;width:100%}
+.controls input, .controls select, .controls button{padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08)}
+.controls input{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+.card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,0.06);transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(0,0,0,0.08)}
+.card-media{font-size:36px}
+.card h3{margin:8px 0 4px}
+.meta{color:var(--muted);font-size:13px;margin:0}
+.card-body{margin-top:8px;color:#333;font-size:14px}
+.intro{margin-top:18px;padding:12px;background:var(--glass);border-radius:10px}
+.tips{margin-top:18px;padding:12px;background:linear-gradient(90deg,#fff,#fff8f2);border-radius:8px}
+.site-footer{border-top:1px solid rgba(0,0,0,0.04);padding:18px;text-align:center;color:var(--muted)}
+@media (max-width:520px){.controls{flex-direction:column} .header-inner{align-items:stretch}}
+
+/* small helper */
+.hidden{display:none !important}
+.search-highlight{background:linear-gradient(90deg,#fff9c4,#fff3b0)}
